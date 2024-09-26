@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.roshambo;
+package Labor2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class RoShamBo {
     public static void RoShamBo()
     {
-        String player1 = "";
+        String player = "";
         String computer = "";
 
         Scanner sc = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class RoShamBo {
         int playerScore=0;
         int computerScore=0;
 
-        while(!(player1=sc.nextLine()).equals("vege"))
+        while(!(player=sc.nextLine()).equals("vege"))
         {
             Random rnd = new  Random();
             int p2 = rnd.nextInt(3);
@@ -36,29 +36,29 @@ public class RoShamBo {
 
             System.out.println("A gép választása: " + computer);
 
-            if (player1.equals("ko") && computer.equals("papir"))
+            if (player.equals("ko") && computer.equals("papir"))
             {
                 computerScore++;
             }
-            else if (player1.equals("ko") && computer.equals("ollo"))
+            else if (player.equals("ko") && computer.equals("ollo"))
             {
                 playerScore++;
             }
 
-            if (player1.equals("papir") && computer.equals("ko"))
+            if (player.equals("papir") && computer.equals("ko"))
             {
                 playerScore++;
             }
-            else if (player1.equals("papir") && computer.equals("ollo"))
+            else if (player.equals("papir") && computer.equals("ollo"))
             {
                 computerScore++;
             }
 
-            if (player1.equals("ollo") && computer.equals("ko"))
+            if (player.equals("ollo") && computer.equals("ko"))
             {
                 computerScore++;
             }
-            else if (player1.equals("ollo") && computer.equals("papir"))
+            else if (player.equals("ollo") && computer.equals("papir"))
             {
                 playerScore++;
             }
