@@ -1,7 +1,5 @@
 package eloadas3;
 
-import java.util.Scanner;
-
 public class Main2 {
     public static void main(String[] args) {
         int result = Math.max(3, 7);
