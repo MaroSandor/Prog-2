@@ -6,15 +6,15 @@ public class Account {
     // - jel a diagramban private láthatóság, + jel a diagramban public láthatóság
     private int id;
     private double balance;
-    private double annualInterestRate;
     private Date dateCreated;
+    public static double Rate = 5;
 
-    public Account(int id, double balance, double annualInterestRate, Date dateCreated) {
-        this.id = id;
-        this.balance = balance;
-        this.annualInterestRate = annualInterestRate;
-        this.dateCreated = dateCreated;
-    }
+    // public Account(int id, double balance, double Rate, Date dateCreated) {
+    //     this.id = id;
+    //     this.balance = balance;
+    //     this.Rate = Rate;
+    //     this.dateCreated = dateCreated;
+    // }
 
     public int getId() {
         return id;
@@ -32,12 +32,12 @@ public class Account {
         this.balance = balance;
     }
 
-    public double getAnnualInterestRate() {
-        return annualInterestRate;
+    public double getRate() {
+        return Rate;
     }
 
-    public void setAnnualInterestRate(double annualInterestRate) {
-        this.annualInterestRate = annualInterestRate;
+    public void setRate(double Rate) {
+        this.Rate = Rate;
     }
 
     public Date getDateCreated() {
@@ -47,6 +47,4 @@ public class Account {
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
-
-    public double get
 }
