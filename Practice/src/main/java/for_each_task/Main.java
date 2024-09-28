@@ -7,5 +7,9 @@ public class Main {
         for (String name : names) {
             System.out.println(String.format("Név: %s", name));
         }
+
+        for (String first_name : names) {
+            System.out.println(first_name);
+        }
     }
 }
