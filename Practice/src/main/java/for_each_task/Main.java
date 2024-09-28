@@ -9,7 +9,7 @@ public class Main {
         }
 
         for (String first_name : names) {
-            System.out.println(first_name);
+            System.out.println("Név: " + first_name);
         }
     }
 }
