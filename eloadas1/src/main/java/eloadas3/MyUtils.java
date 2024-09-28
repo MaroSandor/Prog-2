@@ -1,7 +1,7 @@
 package eloadas3;
 
 public class MyUtils {
-    private MyUtils() {
+    /* private */ MyUtils() {
         // az osztály nem példányosítható
     }
 
