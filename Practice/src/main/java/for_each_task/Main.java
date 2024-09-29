@@ -5,7 +5,7 @@ public class Main {
         String[] names = { "Teszt Elek", "John Doe", "Jane Doe" };
 
         for (String name : names) {
-            System.out.println(String.format("Név: %s", name));
+            System.out.println(name);
         }
     }
 }
