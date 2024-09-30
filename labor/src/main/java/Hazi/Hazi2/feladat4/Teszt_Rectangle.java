@@ -6,5 +6,6 @@ public class Teszt_Rectangle {
         Rectangle r2 = new Rectangle(3.5, 35.9);
 
         System.out.println(r1);
+        System.out.println(r2);
     }
 }
