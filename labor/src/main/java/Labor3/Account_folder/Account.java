@@ -7,14 +7,27 @@ public class Account {
     private int id;
     private double balance;
     private Date dateCreated;
-    public static double Rate = 5;
+    private static double Rate = 5;
 
-    // public Account(int id, double balance, double Rate, Date dateCreated) {
-    //     this.id = id;
-    //     this.balance = balance;
-    //     this.Rate = Rate;
-    //     this.dateCreated = dateCreated;
-    // }
+//    public Account(int id, double balance, double Rate, Date dateCreated) {
+//        this.id = id;
+//        this.balance = balance;
+//        this.Rate = Rate;
+//        this.dateCreated = dateCreated;
+//    }
+
+    public Account() {
+        this.id = 0;
+        this.dateCreated = new Date();
+        this.balance = 0;
+        Account.Rate = 0;
+    }
+
+    public Account(int id, double balance) {
+        this.id = id;
+        this.balance = balance;
+        this.dateCreated = new Date();
+    }
 
     public int getId() {
         return id;
@@ -37,7 +50,7 @@ public class Account {
     }
 
     public void setRate(double Rate) {
-        this.Rate = Rate;
+        Account.Rate = Rate;
     }
 
     public Date getDateCreated() {
