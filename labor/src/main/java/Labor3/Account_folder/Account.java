@@ -45,7 +45,7 @@ public class Account {
         this.balance = balance;
     }
 
-    public double getRate() {
+    public static double getRate() {
         return Rate;
     }
 
@@ -59,5 +59,26 @@ public class Account {
 
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
+    }
+
+    public static double getMonthlyRate() {
+        return Account.Rate / 12;
+    }
+
+    public void deposit(double money) {
+        this.balance += money;
+    }
+
+    public void withdraw(double money) {
+        this.balance -= money;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", balance=" + balance +
+                ", dateCreated=" + dateCreated +
+                '}';
     }
 }
