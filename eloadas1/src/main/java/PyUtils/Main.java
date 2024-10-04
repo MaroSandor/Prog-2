@@ -21,7 +21,7 @@ public class Main {
         kiir(szamok);
     }
 
-    public static void kiir(List<Integer> szamok) {
-
+    public static void kiir(List<Integer> lista) {
+        System.out.println(lista);
     }
 }
