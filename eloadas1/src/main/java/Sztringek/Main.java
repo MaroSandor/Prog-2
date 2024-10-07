@@ -41,5 +41,7 @@ public class Main {
         // Ezért kitalálták az ún. work megoldást; a primitív típust becsomagolták egy
         // osztályba és úgy használjuk.
 
+        
+
     }
 }
