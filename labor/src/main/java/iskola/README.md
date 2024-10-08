@@ -1,0 +1,1 @@
+# Hazi => Hazi3 tartalma (feladat2), de a feladat leírása miatt muszáj volt kihelyezni ide!
