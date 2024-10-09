@@ -51,7 +51,7 @@ public class Ora {
 
     @Override
     public String toString() {
-        return "Óra kódja: " + id + ", kezdeti időpontja: " + startTime + ", neve: " + name + ".";
+        return "Óra neve: " + name + " (kód: " + id + "), kezdés időpontja: " + startTime + ".";
     }
 
 }

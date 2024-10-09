@@ -44,9 +44,21 @@ public class Orarend {
 
     @Override
     public String toString() {
-        return "Orarend [dayOfWeek=" + dayOfWeek + ", lessons=" + Arrays.toString(lessons) + ", counter=" + counter
-                + "]";
+        String result = "Órarend:\n" + dayOfWeek + ": ";
+
+        for (int i = 0; i < counter; i++) {
+            result += "\n" + lessons[i].toString();
+        }
+
+        return result;
     }
+
+    // @Override
+    // public String toString() {
+    // return "Orarend [dayOfWeek=" + dayOfWeek + ", lessons=" +
+    // Arrays.toString(lessons) + ", counter=" + counter
+    // + "]";
+    // }
 
     public boolean oratHozzaad(Ora newLesson) {
         if (this.counter >= 12) {
@@ -61,7 +73,7 @@ public class Orarend {
             }
         }
 
-        this.lessons[this.counter] = newLesson;
+        this.lessons[this.counter++] = newLesson;
         return true;
     }
 }
