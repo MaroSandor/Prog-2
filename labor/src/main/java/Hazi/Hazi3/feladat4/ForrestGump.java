@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ForrestGump {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in); // Scanner létrehozása
 
         int days = in.nextInt();
 
