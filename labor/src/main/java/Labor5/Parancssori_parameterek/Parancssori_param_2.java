@@ -11,9 +11,23 @@ public class Parancssori_param_2 {
         String word = args[0];
         StringBuilder charSet = new StringBuilder();
 
-        for (int i = 0; i < args.length; i++) {
-            
+        for (int i = 1; i < args.length; i++) {
+            if (charSet.indexOf(args[i]) == -1) { // ha még nincs benne
+                charSet.append(args[i]);
+            }
         }
 
+        StringBuilder result = new StringBuilder();
+
+        for (char character : word.toCharArray()) {
+            if (charSet.indexOf(String.valueOf(character)) != -1) {
+                result.append(character).append(character);
+            } else {
+                result.append(character);
+            }
+        }
+
+        // System.out.println(charSet);
+        System.out.println(result);
     }
 }
