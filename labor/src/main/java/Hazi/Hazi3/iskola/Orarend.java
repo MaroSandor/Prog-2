@@ -1,6 +1,4 @@
-package iskola;
-
-import java.util.Arrays;
+package Hazi.Hazi3.iskola;
 
 public class Orarend {
     private String dayOfWeek; // a hét egyes napjainak (hétfő - péntek) tárolására alkalmas változó

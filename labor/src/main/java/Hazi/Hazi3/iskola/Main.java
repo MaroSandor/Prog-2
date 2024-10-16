@@ -1,4 +1,4 @@
-package iskola;
+package Hazi.Hazi3.iskola;
 
 import java.util.Scanner;
 

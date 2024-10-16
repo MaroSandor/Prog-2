@@ -1,4 +1,4 @@
-package iskola;
+package Hazi.Hazi3.iskola;
 
 public class Ora {
     private int id; // id: óra kódja (egész szám),
