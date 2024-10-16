@@ -9,7 +9,6 @@ class FootballTeam {
     public int goals() {
         return concededGoals - scoredGoals;
     }
-
 }
 
 public class Main {
