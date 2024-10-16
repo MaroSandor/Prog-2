@@ -2,11 +2,11 @@ package Labor4.Csaszar_folder;
 
 public class Csaszar {
     private String name;
-    private int birthOfYear;
+    private int age;
 
-    public Csaszar(String name, int birthOfYear) {
+    public Csaszar(String name, int age) {
         this.name = name;
-        this.birthOfYear = birthOfYear;
+        this.age = age;
     }
 
     public String getName() {
@@ -18,15 +18,15 @@ public class Csaszar {
     }
 
     public int getBirthOfYear() {
-        return birthOfYear;
+        return age;
     }
 
-    public void setBirthOfYear(int birthOfYear) {
-        this.birthOfYear = birthOfYear;
+    public void setBirthOfYear(int age) {
+        this.age = age;
     }
 
     @Override
     public String toString() {
-        return this.name + " (" + this.birthOfYear + ')';
+        return this.name + " (" + this.age + ')';
     }
 }

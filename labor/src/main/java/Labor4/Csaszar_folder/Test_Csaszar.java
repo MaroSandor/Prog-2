@@ -9,23 +9,29 @@ public class Test_Csaszar {
         Scanner scanner = new Scanner(System.in);
 
         int index = 0;
-        String nev; // A beolvasott neve
-        int datum; // A beolvasott születési éve
+        String name; // A beolvasott neve
+        int age; // A beolvasott születési éve
 
-        while ((datum = scanner.nextInt()) != 0) {
-            nev = scanner.next();
-            t[index++] = new Csaszar(nev, datum);
+        // Módosított while ciklus, hogy az inputot "0" bevitelnél befejezze
+        while (true) {
+            name = scanner.next().trim();
+            if (name.isBlank()) {
+                break;
+            }
+            age = Integer.parseInt(scanner.next().trim());
+            t[index++] = new Csaszar(name, age);
         }
 
+        // Minimum keresése a tömbben
         Csaszar min = t[0];
 
-        for (int i = 0; i < index; i++) {
+        for (int i = 1; i < index; i++) {
             if (t[i].getBirthOfYear() < min.getBirthOfYear()) {
                 min = t[i];
             }
         }
 
-        System.out.println(min);
+        System.out.println("A legkorábban született császár: " + min);
 
         scanner.close();
     }
