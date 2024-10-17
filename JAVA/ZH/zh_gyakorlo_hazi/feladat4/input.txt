@@ -1,0 +1,6 @@
+Mosolygos arc;Arcok;8;34
+Pokok;Allatok;7;62
+Remiszto arc;Arcok;9;41
+Szellem;Kitalalt lenyek;8;34
+Cica;Allatok;7;58
+Zombi;Kitalalt lenyek;6;62
